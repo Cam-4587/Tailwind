@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind CSS Learning Playground</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <h1 class="text-2xl font-bold text-indigo-600">Tailwind CSS Playground</h1>
+                <ul class="flex space-x-8">
+                    <li><a href="#layout" class="text-gray-600 hover:text-indigo-600 transition">Layout</a></li>
+                    <li><a href="#components" class="text-gray-600 hover:text-indigo-600 transition">Components</a></li>
+                    <li><a href="#effects" class="text-gray-600 hover:text-indigo-600 transition">Effects</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Container -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        
+        <!-- Layout Section -->
+        <section id="layout" class="mb-16">
+            <h2 class="text-3xl font-bold text-gray-900 mb-8">Layout & Spacing</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Flexbox Example -->
+                <div class="bg-white rounded-lg shadow p-6">
+                    <h3 class="text-lg font-semibold mb-4 text-gray-800">Flexbox</h3>
+                    <div class="flex space-x-4 bg-gray-100 p-4 rounded">
+                        <div class="flex-1 bg-blue-500 text-white p-2 rounded text-center">Item 1</div>
+                        <div class="flex-1 bg-blue-500 text-white p-2 rounded text-center">Item 2</div>
+                        <div class="flex-1 bg-blue-500 text-white p-2 rounded text-center">Item 3</div>
+                    </div>
+                </div>
+
+                <!-- Grid Example -->
+                <div class="bg-white rounded-lg shadow p-6">
+                    <h3 class="text-lg font-semibold mb-4 text-gray-800">Grid</h3>
+                    <div class="grid grid-cols-2 gap-2 bg-gray-100 p-4 rounded">
+                        <div class="bg-green-500 text-white p-2 rounded text-center">1</div>
+                        <div class="bg-green-500 text-white p-2 rounded text-center">2</div>
+                        <div class="bg-green-500 text-white p-2 rounded text-center">3</div>
+                        <div class="bg-green-500 text-white p-2 rounded text-center">4</div>
+                    </div>
+                </div>
+
+                <!-- Padding & Margin -->
+                <div class="bg-white rounded-lg shadow p-6">
+                    <h3 class="text-lg font-semibold mb-4 text-gray-800">Spacing</h3>
+                    <div class="bg-gray-100 rounded">
+                        <div class="bg-purple-500 text-white p-8">p-8</div>
+                        <div class="bg-purple-400 text-white m-4">m-4</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Components Section -->
+        <section id="components" class="mb-16">
+            <h2 class="text-3xl font-bold text-gray-900 mb-8">UI Components</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Button Examples -->
+                <div class="bg-white rounded-lg shadow p-6">
+                    <h3 class="text-lg font-semibold mb-4 text-gray-800">Buttons</h3>
+                    <div class="space-y-3">
+                        <button class="w-full bg-indigo-600 text-white py-2 px-4 rounded-lg hover:bg-indigo-700 transition font-semibold">
+                            Primary Button
+                        </button>
+                        <button class="w-full bg-gray-200 text-gray-800 py-2 px-4 rounded-lg hover:bg-gray-300 transition font-semibold">
+                            Secondary Button
+                        </button>
+                        <button class="w-full border-2 border-red-500 text-red-500 py-2 px-4 rounded-lg hover:bg-red-50 transition font-semibold">
+                            Outline Button
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Card Example -->
+                <div class="bg-white rounded-lg shadow p-6">
+                    <h3 class="text-lg font-semibold mb-4 text-gray-800">Card Component</h3>
+                    <div class="border border-gray-200 rounded-lg overflow-hidden hover:shadow-lg transition">
+                        <div class="bg-gradient-to-r from-indigo-500 to-purple-600 h-32"></div>
+                        <div class="p-4">
+                            <h4 class="font-semibold text-gray-900">Card Title</h4>
+                            <p class="text-gray-600 text-sm mt-2">This is a sample card with image, title, and description.</p>
+                            <a href="#" class="inline-block mt-3 text-indigo-600 hover:text-indigo-700 font-semibold">Learn More →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Badge Examples -->
+                <div class="bg-white rounded-lg shadow p-6">
+                    <h3 class="text-lg font-semibold mb-4 text-gray-800">Badges & Tags</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-semibold">Tag</span>
+                        <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-semibold">Success</span>
+                        <span class="bg-red-100 text-red-800 px-3 py-1 rounded-full text-sm font-semibold">Alert</span>
+                        <span class="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm font-semibold">Warning</span>
+                    </div>
+                </div>
+
+                <!-- Form Example -->
+                <div class="bg-white rounded-lg shadow p-6">
+                    <h3 class="text-lg font-semibold mb-4 text-gray-800">Form Elements</h3>
+                    <div class="space-y-3">
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-1">Email</label>
+                            <input type="email" placeholder="your@email.com" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-1">Message</label>
+                            <textarea placeholder="Your message..." class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 resize-none"></textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Effects Section -->
+        <section id="effects" class="mb-16">
+            <h2 class="text-3xl font-bold text-gray-900 mb-8">Effects & Animations</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Shadow Example -->
+                <div class="bg-white rounded-lg shadow p-6 hover:shadow-xl transition duration-300">
+                    <h3 class="text-lg font-semibold mb-4 text-gray-800">Hover Shadow</h3>
+                    <p class="text-gray-600">Hover over this card to see the shadow effect</p>
+                </div>
+
+                <!-- Opacity & Transition -->
+                <div class="bg-white rounded-lg shadow p-6 hover:bg-indigo-50 transition duration-200">
+                    <h3 class="text-lg font-semibold mb-4 text-gray-800">Hover Background</h3>
+                    <p class="text-gray-600">Smooth background color transition on hover</p>
+                </div>
+
+                <!-- Scale Effect -->
+                <div class="bg-white rounded-lg shadow p-6 hover:scale-105 transition duration-300 cursor-pointer">
+                    <h3 class="text-lg font-semibold mb-4 text-gray-800">Scale Effect</h3>
+                    <p class="text-gray-600">Card scales up when you hover</p>
+                </div>
+
+                <!-- Gradient -->
+                <div class="bg-gradient-to-r from-pink-500 to-purple-500 rounded-lg shadow p-6 text-white">
+                    <h3 class="text-lg font-semibold mb-4">Gradient Background</h3>
+                    <p>Beautiful gradient from pink to purple</p>
+                </div>
+
+                <!-- Blur & Opacity -->
+                <div class="bg-white rounded-lg shadow p-6">
+                    <h3 class="text-lg font-semibold mb-4 text-gray-800">Opacity Levels</h3>
+                    <div class="space-y-2">
+                        <div class="bg-indigo-500 opacity-100 p-2 text-white rounded">Opacity 100%</div>
+                        <div class="bg-indigo-500 opacity-75 p-2 text-white rounded">Opacity 75%</div>
+                        <div class="bg-indigo-500 opacity-50 p-2 text-white rounded">Opacity 50%</div>
+                    </div>
+                </div>
+
+                <!-- Transform & Rotate -->
+                <div class="bg-white rounded-lg shadow p-6 flex items-center justify-center">
+                    <div class="hover:rotate-6 transition duration-300 cursor-pointer">
+                        <div class="bg-gradient-to-br from-yellow-400 to-orange-400 rounded-lg p-4 text-white font-semibold">
+                            Hover to Rotate
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Typography Section -->
+        <section id="typography" class="mb-16">
+            <h2 class="text-3xl font-bold text-gray-900 mb-8">Typography</h2>
+            
+            <div class="bg-white rounded-lg shadow p-8 space-y-6">
+                <div>
+                    <p class="text-xs uppercase tracking-widest text-gray-500 font-semibold mb-2">Heading Styles</p>
+                    <h1 class="text-4xl font-bold text-gray-900">Heading 1 - text-4xl font-bold</h1>
+                </div>
+                
+                <div>
+                    <h2 class="text-3xl font-bold text-gray-900">Heading 2 - text-3xl font-bold</h2>
+                </div>
+                
+                <div>
+                    <h3 class="text-2xl font-semibold text-gray-800">Heading 3 - text-2xl font-semibold</h3>
+                </div>
+                
+                <div class="pt-4 border-t">
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        This is a paragraph with <strong class="font-bold">bold text</strong>, <em class="italic">italic text</em>, and 
+                        <span class="text-indigo-600 font-semibold">colored text</span>. Tailwind makes it easy to style typography.
+                    </p>
+                </div>
+                
+                <div class="grid grid-cols-3 gap-4 pt-4 border-t">
+                    <div>
+                        <p class="text-sm text-gray-600">text-sm</p>
+                        <p class="text-base text-gray-600">text-base</p>
+                        <p class="text-lg text-gray-600">text-lg</p>
+                    </div>
+                    <div>
+                        <p class="font-thin text-gray-600">font-thin</p>
+                        <p class="font-normal text-gray-600">font-normal</p>
+                        <p class="font-bold text-gray-600">font-bold</p>
+                    </div>
+                    <div>
+                        <p class="tracking-tight text-gray-600">tracking-tight</p>
+                        <p class="tracking-normal text-gray-600">tracking-normal</p>
+                        <p class="tracking-wide text-gray-600">tracking-wide</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="bg-gray-900 text-gray-300 py-8 rounded-lg mt-16">
+            <div class="flex justify-between items-center">
+                <p>&copy; 2025 Tailwind CSS Learning Playground</p>
+                <p>Built with Tailwind CSS v3</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

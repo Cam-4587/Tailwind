@@ -1,0 +1,20 @@
+{
+  "name": "tailwind-css-playground",
+  "version": "1.0.0",
+  "description": "A learning workspace for Tailwind CSS concepts",
+  "scripts": {
+    "dev": "tailwindcss -i ./src/input.css -o ./src/output.css --watch",
+    "build": "tailwindcss -i ./src/input.css -o ./src/output.css"
+  },
+  "keywords": [
+    "tailwind",
+    "css",
+    "learning",
+    "playground"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "tailwindcss": "^3.4.1"
+  }
+}
