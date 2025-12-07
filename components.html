@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Components - Tailwind CSS Playground</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <h1 class="text-2xl font-bold text-blue-600">Tailwind CSS Playground</h1>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <a href="index.html" class="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium">Home</a>
+                    <a href="layout.html" class="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium">Layout</a>
+                    <a href="components.html" class="text-blue-600 border-b-2 border-blue-600 px-3 py-2 rounded-md text-sm font-medium">Components</a>
+                    <a href="responsive.html" class="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium">Responsive</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="bg-gradient-to-r from-purple-500 to-indigo-600 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-4xl font-extrabold mb-2">Component Examples</h2>
+            <p class="text-xl">Build beautiful UI components with Tailwind CSS</p>
+        </div>
+    </div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        
+        <!-- Alerts -->
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold text-gray-800 mb-6 border-b-4 border-purple-500 pb-2 inline-block">Alerts</h2>
+            <div class="space-y-4">
+                <div class="bg-blue-100 border-l-4 border-blue-500 text-blue-700 p-4 rounded" role="alert">
+                    <p class="font-bold">Info Alert</p>
+                    <p>This is an informational alert message.</p>
+                </div>
+                <div class="bg-green-100 border-l-4 border-green-500 text-green-700 p-4 rounded" role="alert">
+                    <p class="font-bold">Success Alert</p>
+                    <p>Your action was completed successfully!</p>
+                </div>
+                <div class="bg-yellow-100 border-l-4 border-yellow-500 text-yellow-700 p-4 rounded" role="alert">
+                    <p class="font-bold">Warning Alert</p>
+                    <p>Please be cautious about this action.</p>
+                </div>
+                <div class="bg-red-100 border-l-4 border-red-500 text-red-700 p-4 rounded" role="alert">
+                    <p class="font-bold">Error Alert</p>
+                    <p>Something went wrong. Please try again.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Badges -->
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold text-gray-800 mb-6 border-b-4 border-purple-500 pb-2 inline-block">Badges</h2>
+            <div class="bg-white rounded-lg shadow-md p-6">
+                <div class="flex flex-wrap gap-3">
+                    <span class="bg-blue-500 text-white px-3 py-1 rounded-full text-sm font-semibold">Blue Badge</span>
+                    <span class="bg-green-500 text-white px-3 py-1 rounded-full text-sm font-semibold">Green Badge</span>
+                    <span class="bg-red-500 text-white px-3 py-1 rounded-full text-sm font-semibold">Red Badge</span>
+                    <span class="bg-yellow-500 text-white px-3 py-1 rounded-full text-sm font-semibold">Yellow Badge</span>
+                    <span class="bg-purple-500 text-white px-3 py-1 rounded-full text-sm font-semibold">Purple Badge</span>
+                    <span class="bg-gray-500 text-white px-3 py-1 rounded-full text-sm font-semibold">Gray Badge</span>
+                    <span class="border-2 border-blue-500 text-blue-500 px-3 py-1 rounded-full text-sm font-semibold">Outlined Badge</span>
+                    <span class="bg-gradient-to-r from-pink-500 to-purple-500 text-white px-3 py-1 rounded-full text-sm font-semibold">Gradient Badge</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Navigation Tabs -->
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold text-gray-800 mb-6 border-b-4 border-purple-500 pb-2 inline-block">Navigation Tabs</h2>
+            <div class="bg-white rounded-lg shadow-md p-6">
+                <div class="border-b border-gray-200">
+                    <nav class="flex space-x-8">
+                        <a href="#" class="border-b-2 border-blue-500 text-blue-600 py-4 px-1 font-medium">Active Tab</a>
+                        <a href="#" class="border-b-2 border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300 py-4 px-1 font-medium">Tab 2</a>
+                        <a href="#" class="border-b-2 border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300 py-4 px-1 font-medium">Tab 3</a>
+                        <a href="#" class="border-b-2 border-transparent text-gray-400 py-4 px-1 font-medium cursor-not-allowed">Disabled</a>
+                    </nav>
+                </div>
+                <div class="mt-4 p-4">
+                    <p class="text-gray-700">This is the content for the active tab.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Progress Bars -->
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold text-gray-800 mb-6 border-b-4 border-purple-500 pb-2 inline-block">Progress Bars</h2>
+            <div class="bg-white rounded-lg shadow-md p-6 space-y-6">
+                <div>
+                    <div class="flex justify-between mb-1">
+                        <span class="text-sm font-medium text-gray-700">Progress 25%</span>
+                        <span class="text-sm font-medium text-gray-700">25%</span>
+                    </div>
+                    <div class="w-full bg-gray-200 rounded-full h-2.5">
+                        <div class="bg-blue-500 h-2.5 rounded-full" style="width: 25%"></div>
+                    </div>
+                </div>
+                <div>
+                    <div class="flex justify-between mb-1">
+                        <span class="text-sm font-medium text-gray-700">Progress 50%</span>
+                        <span class="text-sm font-medium text-gray-700">50%</span>
+                    </div>
+                    <div class="w-full bg-gray-200 rounded-full h-2.5">
+                        <div class="bg-green-500 h-2.5 rounded-full" style="width: 50%"></div>
+                    </div>
+                </div>
+                <div>
+                    <div class="flex justify-between mb-1">
+                        <span class="text-sm font-medium text-gray-700">Progress 75%</span>
+                        <span class="text-sm font-medium text-gray-700">75%</span>
+                    </div>
+                    <div class="w-full bg-gray-200 rounded-full h-2.5">
+                        <div class="bg-yellow-500 h-2.5 rounded-full" style="width: 75%"></div>
+                    </div>
+                </div>
+                <div>
+                    <div class="flex justify-between mb-1">
+                        <span class="text-sm font-medium text-gray-700">Progress 100%</span>
+                        <span class="text-sm font-medium text-gray-700">100%</span>
+                    </div>
+                    <div class="w-full bg-gray-200 rounded-full h-2.5">
+                        <div class="bg-purple-500 h-2.5 rounded-full" style="width: 100%"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Modal Example (Static) -->
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold text-gray-800 mb-6 border-b-4 border-purple-500 pb-2 inline-block">Modal (Static Example)</h2>
+            <div class="bg-white rounded-lg shadow-md p-6">
+                <div class="bg-gray-900 bg-opacity-50 p-8 rounded-lg">
+                    <div class="bg-white rounded-lg shadow-xl max-w-md mx-auto">
+                        <div class="p-6">
+                            <div class="flex justify-between items-center mb-4">
+                                <h3 class="text-xl font-bold text-gray-900">Modal Title</h3>
+                                <button class="text-gray-400 hover:text-gray-600">
+                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="mb-4">
+                                <p class="text-gray-600">This is a static example of a modal dialog. In a real implementation, you would use JavaScript to show/hide this modal.</p>
+                            </div>
+                            <div class="flex justify-end space-x-2">
+                                <button class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded">
+                                    Cancel
+                                </button>
+                                <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                                    Confirm
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Dropdown Menu (Static) -->
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold text-gray-800 mb-6 border-b-4 border-purple-500 pb-2 inline-block">Dropdown Menu (Static Example)</h2>
+            <div class="bg-white rounded-lg shadow-md p-6">
+                <div class="relative inline-block text-left">
+                    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded inline-flex items-center">
+                        <span>Options</span>
+                        <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div class="origin-top-right absolute left-0 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5">
+                        <div class="py-1">
+                            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Account settings</a>
+                            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Support</a>
+                            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">License</a>
+                            <div class="border-t border-gray-100"></div>
+                            <a href="#" class="block px-4 py-2 text-sm text-red-600 hover:bg-gray-100">Sign out</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Breadcrumbs -->
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold text-gray-800 mb-6 border-b-4 border-purple-500 pb-2 inline-block">Breadcrumbs</h2>
+            <div class="bg-white rounded-lg shadow-md p-6">
+                <nav class="flex" aria-label="Breadcrumb">
+                    <ol class="inline-flex items-center space-x-1 md:space-x-3">
+                        <li class="inline-flex items-center">
+                            <a href="#" class="text-gray-700 hover:text-blue-600 inline-flex items-center">
+                                <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"></path>
+                                </svg>
+                                Home
+                            </a>
+                        </li>
+                        <li>
+                            <div class="flex items-center">
+                                <svg class="w-6 h-6 text-gray-400" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path>
+                                </svg>
+                                <a href="#" class="text-gray-700 hover:text-blue-600 ml-1 md:ml-2">Projects</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="flex items-center">
+                                <svg class="w-6 h-6 text-gray-400" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path>
+                                </svg>
+                                <span class="text-gray-500 ml-1 md:ml-2">Current Page</span>
+                            </div>
+                        </li>
+                    </ol>
+                </nav>
+            </div>
+        </section>
+
+        <!-- Pagination -->
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold text-gray-800 mb-6 border-b-4 border-purple-500 pb-2 inline-block">Pagination</h2>
+            <div class="bg-white rounded-lg shadow-md p-6">
+                <nav class="flex justify-center">
+                    <ul class="inline-flex items-center -space-x-px">
+                        <li>
+                            <a href="#" class="block px-3 py-2 ml-0 leading-tight text-gray-500 bg-white border border-gray-300 rounded-l-lg hover:bg-gray-100 hover:text-gray-700">
+                                <span>Previous</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="px-3 py-2 leading-tight text-blue-600 bg-blue-50 border border-gray-300 hover:bg-blue-100 hover:text-blue-700">1</a>
+                        </li>
+                        <li>
+                            <a href="#" class="px-3 py-2 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700">2</a>
+                        </li>
+                        <li>
+                            <a href="#" class="px-3 py-2 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700">3</a>
+                        </li>
+                        <li>
+                            <a href="#" class="px-3 py-2 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700">4</a>
+                        </li>
+                        <li>
+                            <a href="#" class="px-3 py-2 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700">5</a>
+                        </li>
+                        <li>
+                            <a href="#" class="block px-3 py-2 leading-tight text-gray-500 bg-white border border-gray-300 rounded-r-lg hover:bg-gray-100 hover:text-gray-700">
+                                <span>Next</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+
+        <!-- List Groups -->
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold text-gray-800 mb-6 border-b-4 border-purple-500 pb-2 inline-block">List Groups</h2>
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                <ul class="divide-y divide-gray-200">
+                    <li class="p-4 hover:bg-gray-50 cursor-pointer flex items-center justify-between">
+                        <span class="text-gray-700">List item 1</span>
+                        <span class="text-blue-600 font-semibold">Active</span>
+                    </li>
+                    <li class="p-4 hover:bg-gray-50 cursor-pointer">
+                        <span class="text-gray-700">List item 2</span>
+                    </li>
+                    <li class="p-4 hover:bg-gray-50 cursor-pointer">
+                        <span class="text-gray-700">List item 3</span>
+                    </li>
+                    <li class="p-4 bg-blue-50 border-l-4 border-blue-500">
+                        <span class="text-blue-700 font-medium">Selected list item</span>
+                    </li>
+                    <li class="p-4 hover:bg-gray-50 cursor-pointer">
+                        <span class="text-gray-700">List item 5</span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p class="text-lg mb-2">Tailwind CSS Playground</p>
+            <p class="text-sm text-gray-400">Learn, Experiment, and Build with Tailwind CSS</p>
+        </div>
+    </footer>
+
+</body>
+</html>

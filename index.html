@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind CSS Playground</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <h1 class="text-2xl font-bold text-blue-600">Tailwind CSS Playground</h1>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <a href="index.html" class="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium">Home</a>
+                    <a href="layout.html" class="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium">Layout</a>
+                    <a href="components.html" class="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium">Components</a>
+                    <a href="responsive.html" class="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium">Responsive</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="bg-gradient-to-r from-blue-500 to-purple-600 text-white py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-5xl font-extrabold mb-4">Welcome to Tailwind CSS Playground</h2>
+            <p class="text-xl mb-8">Learn and experiment with Tailwind CSS utility classes</p>
+            <button class="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transform hover:scale-105 transition duration-300">
+                Get Started
+            </button>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        
+        <!-- Typography Section -->
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold text-gray-800 mb-6 border-b-4 border-blue-500 pb-2 inline-block">Typography</h2>
+            <div class="bg-white rounded-lg shadow-md p-6 space-y-4">
+                <h1 class="text-5xl font-extrabold text-gray-900">Heading 1 - Extra Bold</h1>
+                <h2 class="text-4xl font-bold text-gray-800">Heading 2 - Bold</h2>
+                <h3 class="text-3xl font-semibold text-gray-700">Heading 3 - Semibold</h3>
+                <h4 class="text-2xl font-medium text-gray-600">Heading 4 - Medium</h4>
+                <p class="text-lg text-gray-600">This is a paragraph with text-lg class. Tailwind CSS provides utility classes for typography.</p>
+                <p class="text-sm text-gray-500 italic">Small italic text with text-sm class</p>
+                <p class="text-xs text-gray-400 uppercase tracking-wide">Extra small uppercase text</p>
+            </div>
+        </section>
+
+        <!-- Colors Section -->
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold text-gray-800 mb-6 border-b-4 border-blue-500 pb-2 inline-block">Colors</h2>
+            <div class="bg-white rounded-lg shadow-md p-6">
+                <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
+                    <div class="bg-red-500 h-24 rounded-lg flex items-center justify-center text-white font-semibold">Red</div>
+                    <div class="bg-blue-500 h-24 rounded-lg flex items-center justify-center text-white font-semibold">Blue</div>
+                    <div class="bg-green-500 h-24 rounded-lg flex items-center justify-center text-white font-semibold">Green</div>
+                    <div class="bg-yellow-500 h-24 rounded-lg flex items-center justify-center text-white font-semibold">Yellow</div>
+                    <div class="bg-purple-500 h-24 rounded-lg flex items-center justify-center text-white font-semibold">Purple</div>
+                    <div class="bg-pink-500 h-24 rounded-lg flex items-center justify-center text-white font-semibold">Pink</div>
+                    <div class="bg-indigo-500 h-24 rounded-lg flex items-center justify-center text-white font-semibold">Indigo</div>
+                    <div class="bg-gray-500 h-24 rounded-lg flex items-center justify-center text-white font-semibold">Gray</div>
+                    <div class="bg-orange-500 h-24 rounded-lg flex items-center justify-center text-white font-semibold">Orange</div>
+                    <div class="bg-teal-500 h-24 rounded-lg flex items-center justify-center text-white font-semibold">Teal</div>
+                    <div class="bg-cyan-500 h-24 rounded-lg flex items-center justify-center text-white font-semibold">Cyan</div>
+                    <div class="bg-lime-500 h-24 rounded-lg flex items-center justify-center text-white font-semibold">Lime</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Buttons Section -->
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold text-gray-800 mb-6 border-b-4 border-blue-500 pb-2 inline-block">Buttons</h2>
+            <div class="bg-white rounded-lg shadow-md p-6">
+                <div class="flex flex-wrap gap-4">
+                    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                        Primary Button
+                    </button>
+                    <button class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">
+                        Success Button
+                    </button>
+                    <button class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded">
+                        Danger Button
+                    </button>
+                    <button class="bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded">
+                        Secondary Button
+                    </button>
+                    <button class="border-2 border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white font-bold py-2 px-4 rounded transition duration-300">
+                        Outline Button
+                    </button>
+                    <button class="bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white font-bold py-2 px-4 rounded">
+                        Gradient Button
+                    </button>
+                    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded-full">
+                        Rounded Button
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Cards Section -->
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold text-gray-800 mb-6 border-b-4 border-blue-500 pb-2 inline-block">Cards</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition duration-300">
+                    <div class="h-48 bg-gradient-to-r from-blue-400 to-blue-600"></div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Card Title 1</h3>
+                        <p class="text-gray-600 mb-4">This is a simple card component built with Tailwind CSS utility classes.</p>
+                        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                            Learn More
+                        </button>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition duration-300">
+                    <div class="h-48 bg-gradient-to-r from-purple-400 to-purple-600"></div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Card Title 2</h3>
+                        <p class="text-gray-600 mb-4">Cards are great for displaying content in an organized way.</p>
+                        <button class="bg-purple-500 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded">
+                            Learn More
+                        </button>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition duration-300">
+                    <div class="h-48 bg-gradient-to-r from-green-400 to-green-600"></div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Card Title 3</h3>
+                        <p class="text-gray-600 mb-4">Experiment with different colors and styles using Tailwind classes.</p>
+                        <button class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">
+                            Learn More
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Spacing & Sizing Section -->
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold text-gray-800 mb-6 border-b-4 border-blue-500 pb-2 inline-block">Spacing & Sizing</h2>
+            <div class="bg-white rounded-lg shadow-md p-6 space-y-4">
+                <div class="space-y-2">
+                    <div class="bg-blue-200 p-2 rounded">Padding: p-2</div>
+                    <div class="bg-blue-300 p-4 rounded">Padding: p-4</div>
+                    <div class="bg-blue-400 p-6 rounded text-white">Padding: p-6</div>
+                    <div class="bg-blue-500 p-8 rounded text-white">Padding: p-8</div>
+                </div>
+                <div class="space-y-2 mt-4">
+                    <div class="bg-purple-200 w-1/4 h-12 rounded flex items-center justify-center">w-1/4</div>
+                    <div class="bg-purple-300 w-1/2 h-12 rounded flex items-center justify-center">w-1/2</div>
+                    <div class="bg-purple-400 w-3/4 h-12 rounded flex items-center justify-center text-white">w-3/4</div>
+                    <div class="bg-purple-500 w-full h-12 rounded flex items-center justify-center text-white">w-full</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Hover Effects Section -->
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold text-gray-800 mb-6 border-b-4 border-blue-500 pb-2 inline-block">Hover & Transition Effects</h2>
+            <div class="bg-white rounded-lg shadow-md p-6">
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div class="bg-blue-500 text-white p-6 rounded-lg hover:bg-blue-700 transition duration-300 cursor-pointer text-center">
+                        <p class="font-semibold">Hover for Color Change</p>
+                    </div>
+                    <div class="bg-green-500 text-white p-6 rounded-lg transform hover:scale-110 transition duration-300 cursor-pointer text-center">
+                        <p class="font-semibold">Hover to Scale Up</p>
+                    </div>
+                    <div class="bg-purple-500 text-white p-6 rounded-lg transform hover:rotate-3 transition duration-300 cursor-pointer text-center">
+                        <p class="font-semibold">Hover to Rotate</p>
+                    </div>
+                    <div class="bg-red-500 text-white p-6 rounded-lg hover:shadow-2xl transition duration-300 cursor-pointer text-center">
+                        <p class="font-semibold">Hover for Shadow</p>
+                    </div>
+                    <div class="bg-yellow-500 text-white p-6 rounded-lg transform hover:-translate-y-2 transition duration-300 cursor-pointer text-center">
+                        <p class="font-semibold">Hover to Move Up</p>
+                    </div>
+                    <div class="bg-pink-500 text-white p-6 rounded-lg hover:opacity-75 transition duration-300 cursor-pointer text-center">
+                        <p class="font-semibold">Hover for Opacity</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Form Elements Section -->
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold text-gray-800 mb-6 border-b-4 border-blue-500 pb-2 inline-block">Form Elements</h2>
+            <div class="bg-white rounded-lg shadow-md p-6">
+                <form class="space-y-4">
+                    <div>
+                        <label class="block text-gray-700 text-sm font-bold mb-2" for="name">
+                            Name
+                        </label>
+                        <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-blue-500" id="name" type="text" placeholder="Enter your name">
+                    </div>
+                    <div>
+                        <label class="block text-gray-700 text-sm font-bold mb-2" for="email">
+                            Email
+                        </label>
+                        <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-blue-500" id="email" type="email" placeholder="Enter your email">
+                    </div>
+                    <div>
+                        <label class="block text-gray-700 text-sm font-bold mb-2" for="message">
+                            Message
+                        </label>
+                        <textarea class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-blue-500" id="message" rows="4" placeholder="Enter your message"></textarea>
+                    </div>
+                    <div>
+                        <label class="flex items-center">
+                            <input type="checkbox" class="form-checkbox h-5 w-5 text-blue-600">
+                            <span class="ml-2 text-gray-700">I agree to the terms and conditions</span>
+                        </label>
+                    </div>
+                    <div>
+                        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button">
+                            Submit
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p class="text-lg mb-2">Tailwind CSS Playground</p>
+            <p class="text-sm text-gray-400">Learn, Experiment, and Build with Tailwind CSS</p>
+        </div>
+    </footer>
+
+</body>
+</html>
